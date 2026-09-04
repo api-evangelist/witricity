@@ -1,0 +1,17 @@
+generated: '2026-09-04'
+method: searched
+source: https://www.witricity.com/
+limit_count: 0
+note: >-
+  No rate limits are documented because no API exists. Contract discovery on
+  2026-09-04 found no developer portal, no API documentation and no
+  machine-readable contract on any host the record knows — api., developer.,
+  docs., dev. and portal.witricity.com are all NXDOMAIN, and every named
+  discovery path returns 404 on witricity.com and www.witricity.com. With no
+  API surface there are no windows, quotas, burst allowances, RateLimit-*
+  response headers or 429 semantics to record.
+limits: []
+evidence:
+  - {url: 'https://www.witricity.com/', status: 200, finding: no developer or API section}
+  - {url: 'https://www.witricity.com/tech-faqs.php', status: 200, finding: technical FAQ covers hardware physics only, no API}
+  - {url: 'https://www.witricity.com/openapi.json', status: 404, finding: no contract at API host root}

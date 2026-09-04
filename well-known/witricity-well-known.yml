@@ -1,0 +1,68 @@
+generated: '2026-09-04'
+method: probed
+source: https://www.witricity.com/
+note: >-
+  Every named discovery path was probed on both hosts the record knows
+  (witricity.com and www.witricity.com; witricity.com 301s to www). No API,
+  docs or console host exists to probe — api./developer./docs./dev./portal.
+  witricity.com all return NXDOMAIN, and apis[] is empty so there is no
+  baseURL or OpenAPI servers[] host. Every path returned an identical 404
+  HTML error page (14,720 bytes). The negative-control path returned 404 as
+  well, so this host is NOT a path-echoing or catch-all responder and the
+  404s are genuine absences. NO WellKnown or SecurityTxt pointer is emitted:
+  nothing was served.
+hit_count: 0
+path_echo_control: passed
+soft_404_control:
+  path: /.well-known/witricity-negative-control-7f3ab91c.json
+  status: 404
+  bytes: 14720
+dns:
+  - {host: api.witricity.com, result: NXDOMAIN}
+  - {host: developer.witricity.com, result: NXDOMAIN}
+  - {host: docs.witricity.com, result: NXDOMAIN}
+  - {host: dev.witricity.com, result: NXDOMAIN}
+  - {host: portal.witricity.com, result: NXDOMAIN}
+hosts:
+  - host: https://www.witricity.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404, file: null}
+      - {path: /.well-known/openid-configuration, status: 404, file: null}
+      - {path: /.well-known/oauth-authorization-server, status: 404, file: null}
+      - {path: /.well-known/oauth-protected-resource, status: 404, file: null}
+      - {path: /.well-known/api-catalog, status: 404, file: null}
+      - {path: /.well-known/ai-plugin.json, status: 404, file: null}
+      - {path: /.well-known/ucp.json, status: 404, file: null}
+      - {path: /.well-known/acp.json, status: 404, file: null}
+      - {path: /.well-known/aauth-resource.json, status: 404, file: null}
+      - {path: /.well-known/apis.json, status: 404, file: null}
+      - {path: /apis.json, status: 404, file: null}
+      - {path: /apis.yml, status: 404, file: null}
+      - {path: /.well-known/agent-card.json, status: 404, file: null}
+      - {path: /.well-known/agent.json, status: 404, file: null}
+      - {path: /openapi.json, status: 404, file: null}
+      - {path: /openapi.yaml, status: 404, file: null}
+      - {path: /swagger.json, status: 404, file: null}
+      - {path: /api-docs, status: 404, file: null}
+      - {path: /llms.txt, status: 404, file: null}
+  - host: https://witricity.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404, file: null}
+      - {path: /.well-known/openid-configuration, status: 404, file: null}
+      - {path: /.well-known/oauth-authorization-server, status: 404, file: null}
+      - {path: /.well-known/oauth-protected-resource, status: 404, file: null}
+      - {path: /.well-known/api-catalog, status: 404, file: null}
+      - {path: /.well-known/ai-plugin.json, status: 404, file: null}
+      - {path: /.well-known/ucp.json, status: 404, file: null}
+      - {path: /.well-known/acp.json, status: 404, file: null}
+      - {path: /.well-known/aauth-resource.json, status: 404, file: null}
+      - {path: /.well-known/apis.json, status: 404, file: null}
+      - {path: /apis.json, status: 404, file: null}
+      - {path: /apis.yml, status: 404, file: null}
+      - {path: /.well-known/agent-card.json, status: 404, file: null}
+      - {path: /.well-known/agent.json, status: 404, file: null}
+      - {path: /openapi.json, status: 404, file: null}
+      - {path: /openapi.yaml, status: 404, file: null}
+      - {path: /swagger.json, status: 404, file: null}
+      - {path: /api-docs, status: 404, file: null}
+      - {path: /llms.txt, status: 404, file: null}

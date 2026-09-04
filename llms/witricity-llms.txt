@@ -1,0 +1,67 @@
+# WiTricity (WiTricity AI Tech, LLC)
+
+> WiTricity commercializes highly resonant magnetic-resonance wireless power
+> transfer — the technology published by an MIT team led by Marin Soljacic in
+> 2007 — by licensing its foundational patent portfolio, reference designs and
+> engineering services to automakers, Tier 1 suppliers and charging hardware
+> makers. It is a hardware and intellectual-property company, not a software
+> vendor: as of 2026-09-04 it publishes no developer program, no API
+> documentation, and no machine-readable API contract.
+
+## API surface
+
+No public API. Probed 2026-09-04: `api.`, `developer.`, `docs.`, `dev.` and
+`portal.witricity.com` all return NXDOMAIN; `/openapi.json`, `/openapi.yaml`,
+`/swagger.json`, `/api-docs`, `/llms.txt`, `/apis.json`, `/.well-known/apis.json`,
+`/.well-known/agent-card.json` and the full named `/.well-known/` discovery list
+each return HTTP 404 on both `witricity.com` and `www.witricity.com`. No GitHub
+organization exists at github.com/witricity (HTTP 404), and no first-party client
+library is published on npm, PyPI, RubyGems or crates.io. Integration with
+WiTricity systems is delivered through licensee engineering support and custom
+development, described at the Engineering Services page below.
+
+## Company
+
+- [WiTricity](https://www.witricity.com/): Company home — wireless EV charging systems.
+- [About WiTricity AI Tech, LLC](https://www.witricity.com/about-witricity.php): Origin of highly resonant wireless power transfer and the company's history.
+- [How Wireless EV Charging Works](https://www.witricity.com/how-it-works.php): Technical explanation of magnetic-resonance power transfer over distance.
+- [Technical FAQs](https://www.witricity.com/tech-faqs.php): Engineering-level questions on efficiency, alignment, foreign object detection and safety.
+- [Safety and Efficiency](https://www.witricity.com/safety-and-efficiency.php): EMI/EMC, human exposure and end-to-end efficiency posture.
+- [IP Portfolio](https://www.witricity.com/ip-portfolio.php): The patent portfolio that is the company's licensed product.
+- [Licensees](https://www.witricity.com/licensees.php): Partial public list of organizations licensing WiTricity IP.
+- [Engineering Services and Support](https://www.witricity.com/engineering-services.php): Proof of concept, integration consulting, custom development and system simulation for licensees.
+
+## Products and applications
+
+- [MR/1](https://www.witricity.com/mr1.php): WiTricity's wireless charging system.
+- [Light Duty EV Wireless Charging](https://www.witricity.com/light-duty.php)
+- [Medium Duty EV Wireless Charging](https://www.witricity.com/medium-duty.php)
+- [Heavy Duty EV Wireless Charging](https://www.witricity.com/heavy-duty.php)
+- [Autonomous Vehicles](https://www.witricity.com/autonomous.php): Wireless charging for vehicles with no driver to plug them in.
+- [Smart Cities and Infrastructure](https://www.witricity.com/smart-cities.php): Urban transit, shared and autonomous fleets, bidirectional grid.
+- [V2G / Energy Arbitrage](https://www.witricity.com/v2g-energy-arbitrage.php): Bidirectional wireless power and vehicle-to-grid participation.
+
+## Standards
+
+- [Standards](https://www.witricity.com/standards.php): WiTricity chairs several SAE J2954 working groups — the SAE interoperability standard for wireless charging of EVs and PHEVs — and participates in related standards bodies. J2954 is a hardware interoperability standard, not an API specification.
+
+## Library
+
+- [Knowledge Center](https://www.witricity.com/knowledge-center.php): White papers on wireless charging adoption and economics.
+- [Case Studies](https://www.witricity.com/case-studies.php)
+- [Videos and Demos](https://www.witricity.com/videos.php)
+- [Blog and Newsroom](https://www.witricity.com/blog-and-newsroom.php)
+
+## Company policies
+
+- [Terms](https://www.witricity.com/terms.php)
+- [Privacy Policy](https://www.witricity.com/privacy-policy.php)
+- [Cookie Policy](https://www.witricity.com/cookie-policy.php)
+- [Contact](https://www.witricity.com/contact.php)
+- [Careers](https://www.witricity.com/careers.php)
+
+## API Evangelist profile artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/witricity/refs/heads/main/apis.yml): The APIs.json index for this profile.
+- [Well-known discovery probe](https://raw.githubusercontent.com/api-evangelist/witricity/refs/heads/main/well-known/witricity-well-known.yml): Full recorded probe of the named discovery paths, all 404.
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/witricity/refs/heads/main/security/witricity-domain-security.yml): TLS, HSTS, DNSSEC, CAA, SPF and DMARC posture.

@@ -1,0 +1,17 @@
+generated: '2026-09-04'
+method: searched
+source: https://www.witricity.com/
+plan_count: 0
+note: >-
+  WiTricity AI Tech, LLC publishes no pricing or plans page of any kind. The
+  site navigation (Products & Solutions, Technology, Library, Company) carries
+  no pricing entry, and the business model is intellectual-property licensing,
+  reference designs and engineering services negotiated directly with
+  automakers, Tier 1 suppliers and hardware manufacturers — the site routes
+  every commercial inquiry through the contact form. There is no API, so there
+  is no API pricing to record. This is an honest zero, not an unchecked field.
+plans: []
+evidence:
+  - {url: 'https://www.witricity.com/', status: 200, finding: no pricing link in site navigation}
+  - {url: 'https://www.witricity.com/contact.php', status: 200, finding: commercial inquiries handled by contact form}
+  - {url: 'https://www.witricity.com/engineering-services.php', status: 200, finding: services described without published rates}

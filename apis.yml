@@ -1,8 +1,21 @@
 aid: witricity
 name: WiTricity
-description: 'WiTricity is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'WiTricity AI Tech, LLC is a wireless power transfer company founded on
+  the highly resonant magnetic-resonance research published by an MIT team led by Marin
+  Soljacic in 2007. The company holds the foundational patent portfolio for wireless
+  power transfer over distance and commercializes it by licensing intellectual property,
+  reference designs and engineering services to automakers, Tier 1 suppliers and charging
+  hardware manufacturers rather than by selling software. Its product surface is hardware
+  and IP: the MR/1 charging system, light-, medium- and heavy-duty EV wireless charging,
+  smart-city and transit infrastructure, autonomous-vehicle and ground-support-equipment
+  fleets, and bidirectional V2G energy arbitrage. WiTricity chairs several SAE J2954
+  working groups, the interoperability standard for wireless EV and PHEV charging.
+  As of a probe on 2026-09-04 the company publishes no developer program, no API
+  documentation, no machine-readable contract and no public code repositories; its
+  integration story is delivered through licensee engineering support, not a public
+  API.'
 url: https://raw.githubusercontent.com/api-evangelist/witricity/refs/heads/main/apis.yml
+image: https://www.witricity.com/images/logo-for-social.jpg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +25,15 @@ created: '2026-09-04'
 modified: '2026-09-04'
 tags:
 - Company
+- Wireless Power
+- Electric Vehicles
+- EV Charging
+- Automotive
+- Energy
+- Hardware
+- Intellectual Property Licensing
+- Smart Cities
+- Vehicle to Grid
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +42,44 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/witricity_stock/
+  url: https://www.witricity.com/
+- type: TermsOfService
+  url: https://www.witricity.com/terms.php
+- type: PrivacyPolicy
+  url: https://www.witricity.com/privacy-policy.php
+- type: Blog
+  url: https://www.witricity.com/blog-and-newsroom.php
+- type: Support
+  url: https://www.witricity.com/contact.php
+- type: LinkedIn
+  url: https://www.linkedin.com/company/witricity-aitechllc
+- type: DomainSecurity
+  url: security/witricity-domain-security.yml
+- type: LLMsTxt
+  url: llms/witricity-llms.txt
+x-enrichment:
+  date: '2026-09-04'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    WiTricity AI Tech, LLC is an EV wireless-power IP licensor whose entire
+    public site is 30 static .php marketing pages with no developer, API or
+    documentation section; api./developer./docs./dev./portal.witricity.com are
+    all NXDOMAIN and github.com/witricity does not exist, so integration is
+    delivered through licensee engineering services rather than any API.
+  evidence:
+    - url: https://www.witricity.com/
+      status: 200
+    - url: https://www.witricity.com/openapi.json
+      status: 404
+    - url: https://www.witricity.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.witricity.com/.well-known/agent-card.json
+      status: 404
+    - url: https://api.github.com/orgs/witricity
+      status: 404
+  checked: '2026-09-04'
